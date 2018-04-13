@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function funzione()
+{	
+	var nome=document.forms["form1"]["nome"].value;
+	var voto1=parseInt(document.forms["form1"]["voto1"].value);
+	var voto2=parseInt(document.forms["form1"]["voto2"].value);
+	var voto3=parseInt(document.forms["form1"]["voto3"].value);
+	var voto4=parseInt(document.forms["form1"]["voto4"].value);
+	var voto5=parseInt(document.forms["form1"]["voto5"].value);
+	var m=(voto1+voto2+voto3+voto4+voto5)/5;
+	document.write("La media di " +nome+" e':"+m);
+	
+}
+</script>
+
+</head>
+
+<body>
+
+<form id="form1" actions "" methods = "">
+Nome <input name="nome" type="text" /> <br><br>
+Voto1 <input name="voto1" type="text" /> <br><br>
+Voto2 <input name="voto2" type="text" /> <br><br>
+Voto3 <input name="voto3" type="text" /> <br><br>
+Voto4 <input name="voto4" type="text" /> <br><br>
+Voto5 <input name="voto5" type="text" /> <br><br>
+<input type="button" value="Media" onclick="funzione()" />
+
+</form>
+</body>
+</html>
